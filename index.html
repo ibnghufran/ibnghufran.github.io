@@ -1,186 +1,719 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="3; URL=https://ibnghufran.webflow.io/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ibn Ghufran</title>
-    <link rel="icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwCNY7kLphXzwMa4hP47jAIOaSV3MV7eavookwE2rjvvaIkKxv9qz1ARp7No35sH8QuAEBA1SwrAumIa9NnYQy2l02cqiawIPxFxELl5u13iVO-p3aS3TNpN2NAp8eMmKqLaOrq34i1UDizFij3s81TfWfV2lG1kKEPsFe5Ak5JRHeFwOXhN5BtWuAQg/s16000/AbdurRahman%20Ibn%20Ghufran.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techily Fly - Educational Video Editing by AbdurRahman Ibn Ghufran</title>
+    <meta name="description" content="Professional educational video editing services by AbdurRahman Ibn Ghufran, founder of Techily Fly. Transform your educational content with engaging, retention-focused video editing.">
+    <meta name="keywords" content="educational video editing, course video editing, YouTube editing, Techily Fly, AbdurRahman Ibn Ghufran">
+    <meta name="author" content="AbdurRahman Ibn Ghufran">
     
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P8RGQB4');</script>
-<!-- End Google Tag Manager -->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Techily Fly - Educational Video Editing">
+    <meta property="og:description" content="Professional educational video editing that keeps viewers learning and engaged">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techilyfly.com">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
 </head>
-
-<body class="py-3 px-5">
-
-    <div class="container">
-        <h1 class="text-center">Welcome to <a href="https://ibnghufran.webflow.io/" target="_blank">Ibn Ghufran!</a></h1>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-text">Techily Fly</span>
+            </div>
+            <div class="loader-bar"></div>
+        </div>
     </div>
-    <br><br>
-    <div class="container">
-        <h2 class="text-center">This page has been moved. If you are not redirected within 3 seconds, click <a href="https://ibnghufran.webflow.io/">here</a> to go to the IbnGhufran homepage.</h2>
-    </div>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <!-- Grid / Card / View Company/Organization/Institute/Classes/Courses -->
-  <!--
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">
+                    <span class="logo-text">Techily Fly</span>
+                    <span class="logo-subtitle">by AbdurRahman</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#why-me" class="nav-link">Why Me</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="https://creator.tagmango.app/techilyfly" target="_blank" class="nav-link academy-link">Academy <i class="fas fa-external-link-alt"></i></a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-overlay"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    I Edit Educational Videos That <span class="highlight">Keep Viewers Learning</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transform your educational content into engaging, retention-focused videos that inspire, educate, and convert viewers into lifelong learners.
+                </p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i>
+                        View Portfolio
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-calendar-check"></i>
+                        Hire Me
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Videos Edited</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-label">% Satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-6 col-lg-6 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0yF485UOXwXERfQo0-vwTZ9BeBkPjBpjX6matAYz2uGc3-FU4fHMHBBJ_ev85sULVhLohdbpsGQGvfSsRtdANL5xUt1coht39mqnADlL0AFwCKJJuTCFmUYmKCHj0RrllUd3GvHltaCRWrMmw7ZtYgKl8_xUj3WfTB_mYT0FrdaKwi-zXiX9-78AOqA/s16000/Techily%20Fly%20Logo%20Technology%20With%20%20Simplified%20Solutions.png"
-                        alt="Techily Fly">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Techily Fly</h5>
-                        <p class="card-text">About Techily Fly.</p>
-                        <a href="https://techilyfly.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Techily Fly</span></h2>
+                <p class="section-subtitle">Smart visuals for meaningful education</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Hi, I'm <span class="highlight">AbdurRahman Ibn Ghufran</span></h3>
+                        <p>Founder of <strong>Techily Fly</strong> and your dedicated educational video editing partner. With years of experience in transforming complex educational content into engaging visual stories, I help creators and educators connect with their audiences on a deeper level.</p>
+                    </div>
+                    
+                    <div class="skills-container">
+                        <h4>My Expertise</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Video Editing</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Motion Graphics</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Sound Design</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Color Grading</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-skill="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="AbdurRahman Ibn Ghufran">
+                        </div>
+                        <div class="profile-info">
+                            <h4>AbdurRahman Ibn Ghufran</h4>
+                            <p>Educational Video Editor</p>
+                            <div class="profile-badges">
+                                <span class="badge"><i class="fas fa-award"></i> 5+ Years Experience</span>
+                                <span class="badge"><i class="fas fa-certificate"></i> Certified Professional</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW5STri383BB167OM5FDG7k_xfMtU0duj5elGibcLh8cMjxiEVfaNL93tWL9Eqn-vJDWfbr9_ne3Dmf_dqEOdddrKLGdnktirangyeRjdJHJbsjISo_CWAdVLZCGTshYbubRAjpKNTmeccFKVGxww3erw3_iyRoCdsPPwC5SMCZf1zypVlLLa5cSsJ7Q/s16000/Techily%20Fly%20Logo%20Png-01.png"
-                        alt="Techily Fly LMS (Institute)">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Techily Fly LMS (Institute)</h5>
-                        <p class="card-text">About Techily Fly LMS (Institute).</p>
-                        <a href="https://lms.techilyfly.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Services</span></h2>
+                <p class="section-subtitle">Comprehensive video editing solutions for educational content creators</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Course Video Editing</h3>
+                    <p>Transform your raw course footage into polished, professional learning modules that engage students and improve retention rates.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Multi-camera sync</li>
+                        <li><i class="fas fa-check"></i> Screen capture integration</li>
+                        <li><i class="fas fa-check"></i> Chapter markers</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>Educational YouTube Editing</h3>
+                    <p>Optimize your YouTube educational content for maximum engagement, watch time, and subscriber growth with audience-focused editing.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Hook optimization</li>
+                        <li><i class="fas fa-check"></i> Retention editing</li>
+                        <li><i class="fas fa-check"></i> SEO-friendly structure</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Explainer & Tutorial Videos</h3>
+                    <p>Break down complex topics into clear, digestible video content that helps your audience understand and remember key concepts.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Motion graphics</li>
+                        <li><i class="fas fa-check"></i> Animated explanations</li>
+                        <li><i class="fas fa-check"></i> Step-by-step clarity</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3>Lecture Cleanup & Enhancement</h3>
+                    <p>Polish your recorded lectures with professional audio cleanup, visual enhancement, and engaging educational elements.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Audio enhancement</li>
+                        <li><i class="fas fa-check"></i> Visual improvements</li>
+                        <li><i class="fas fa-check"></i> Interactive elements</li>
+                    </ul>
+                    <button class="service-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="highlight">Portfolio</span></h2>
+                <p class="section-subtitle">Showcasing my best educational video editing work</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="course">Course Videos</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="course">
+                    <div class="portfolio-video">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Course Video Project">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Advanced Mathematics Course</h4>
+                            <p>Complete course editing for online mathematics education platform</p>
+                            <span class="video-duration">12 modules</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="youtube">
+                    <div class="portfolio-video">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=400&fit=crop" alt="YouTube Project">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Science YouTube Channel</h4>
+                            <p>Weekly educational content with 100K+ views per video</p>
+                            <span class="video-duration">50+ videos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="tutorial">
+                    <div class="portfolio-video">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="Tutorial Project">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Programming Tutorial Series</h4>
+                            <p>Step-by-step coding tutorials with animated explanations</p>
+                            <span class="video-duration">25 episodes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="course">
+                    <div class="portfolio-video">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1554224154-260325c0599c?w=600&h=400&fit=crop" alt="Business Course">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Business Strategy Course</h4>
+                            <p>Corporate training videos for Fortune 500 company</p>
+                            <span class="video-duration">8 modules</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="youtube">
+                    <div class="portfolio-video">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop" alt="Language Learning">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Language Learning Channel</h4>
+                            <p>Interactive language lessons with subtitles and animations</p>
+                            <span class="video-duration">100+ videos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="tutorial">
+                    <div class="portfolio-video">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1603796846097-bee99e4a601f?w=600&h=400&fit=crop" alt="Design Tutorial">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Graphic Design Tutorials</h4>
+                            <p>Professional design education for creative professionals</p>
+                            <span class="video-duration">30+ tutorials</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW5STri383BB167OM5FDG7k_xfMtU0duj5elGibcLh8cMjxiEVfaNL93tWL9Eqn-vJDWfbr9_ne3Dmf_dqEOdddrKLGdnktirangyeRjdJHJbsjISo_CWAdVLZCGTshYbubRAjpKNTmeccFKVGxww3erw3_iyRoCdsPPwC5SMCZf1zypVlLLa5cSsJ7Q/s16000/Techily%20Fly%20Logo%20Png-01.png"
-                        alt="Techily Fly Store (Shop)">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Techily Fly Store (Shop)</h5>
-                        <p class="card-text">About Techily Fly Store (Shop).</p>
-                        <a href="https://gostore.app/techilyfly" target="_blank" class="btn btn-primary">Know
-                            More...</a>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section id="why-me" class="why-me">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Work With <span class="highlight">Techily Fly</span></h2>
+                <p class="section-subtitle">What sets my educational video editing apart</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Education-First Mindset</h3>
+                    <p>Every editing decision is made with learning outcomes in mind. I understand pedagogy and cognitive load principles.</p>
+                    <div class="feature-stat">
+                        <span class="counter" data-target="85">0</span>%
+                        <p>Learning Retention</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Viewer Retention Strategy</h3>
+                    <p>Proven techniques to keep viewers engaged from start to finish, reducing drop-off rates and increasing completion.</p>
+                    <div class="feature-stat">
+                        <span class="counter" data-target="92">0</span>%
+                        <p>Average Watch Time</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Clean Professional Workflow</h3>
+                    <p>Streamlined process from raw footage to final delivery. Organized file management and clear communication throughout.</p>
+                    <div class="feature-stat">
+                        <span class="counter" data-target="48">0</span>h
+                        <p>Average Turnaround</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick turnaround times without compromising quality. understand the fast-paced nature of educational content creation.</p>
+                    <div class="feature-stat">
+                        <span class="counter" data-target="24">0</span>h
+                        <p>Response Time</p>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW5STri383BB167OM5FDG7k_xfMtU0duj5elGibcLh8cMjxiEVfaNL93tWL9Eqn-vJDWfbr9_ne3Dmf_dqEOdddrKLGdnktirangyeRjdJHJbsjISo_CWAdVLZCGTshYbubRAjpKNTmeccFKVGxww3erw3_iyRoCdsPPwC5SMCZf1zypVlLLa5cSsJ7Q/s16000/Techily%20Fly%20Logo%20Png-01.png"
-                        alt="Techily Fly">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Techily Fly</h5>
-                        <p class="card-text">About Techily Fly.</p>
-                        <a href="https://techilyfly.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client <span class="highlight">Testimonials</span></h2>
+                <p class="section-subtitle">What my clients say about working with Techily Fly</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"AbdurRahman transformed my raw lecture recordings into professional, engaging course content. My student completion rates increased by 40%!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Client">
+                            </div>
+                            <div class="author-info">
+                                <h4>Dr. Sarah Chen</h4>
+                                <p>Online Course Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"The editing quality is exceptional, and the attention to educational details is unmatched. My channel grew from 10K to 100K subscribers in 6 months!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Client">
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Rodriguez</h4>
+                                <p>YouTube Educator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Professional, reliable, and understands educational content perfectly. Techily Fly is now our go-to editor for all training videos."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" alt="Client">
+                            </div>
+                            <div class="author-info">
+                                <h4>Jennifer Liu</h4>
+                                <p>EdTech Startup Founder</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW5STri383BB167OM5FDG7k_xfMtU0duj5elGibcLh8cMjxiEVfaNL93tWL9Eqn-vJDWfbr9_ne3Dmf_dqEOdddrKLGdnktirangyeRjdJHJbsjISo_CWAdVLZCGTshYbubRAjpKNTmeccFKVGxww3erw3_iyRoCdsPPwC5SMCZf1zypVlLLa5cSsJ7Q/s16000/Techily%20Fly%20Logo%20Png-01.png"
-                        alt="Techily Fly">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Techily Fly</h5>
-                        <p class="card-text">About Techily Fly.</p>
-                        <a href="https://techilyfly.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
+            
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Educational Content?</h2>
+                <p class="cta-subtitle">Let's create engaging videos that make learning unforgettable</p>
+                <button class="btn btn-cta" onclick="openContactModal()">
+                    <i class="fas fa-rocket"></i>
+                    Let's Build Your Educational Content
+                </button>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free consultation</span>
+                    </div>
+                    <div class="cta-stat">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quick turnaround</span>
+                    </div>
+                    <div class="cta-stat">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Satisfaction guaranteed</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p class="section-subtitle">Let's discuss your educational video editing needs</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing Together</h3>
+                    <p>I'm here to help you transform your educational content into engaging, professional videos that inspire learning and drive results.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/918825164657" target="_blank">+91 88251 64657</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:ibnghufran.com@gmail.com">ibnghufran.com@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Response Time</h4>
+                                <span>Within 24 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@techilyfly" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdurrahmanibnghufran" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/techilyfly" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/techilyfly" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Project Type (e.g., Course Editing, YouTube, Tutorial)">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Techily Fly</span>
+                        <span class="logo-subtitle">by AbdurRahman Ibn Ghufran</span>
+                    </div>
+                    <p class="footer-description">
+                        Smart visuals for meaningful education. Transforming educational content into engaging learning experiences.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="https://creator.tagmango.app/techilyfly" target="_blank">Academy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><a href="https://wa.me/918825164657">+91 88251 64657</a></li>
+                        <li><a href="mailto:ibnghufran.com@gmail.com">ibnghufran.com@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="footer-social">
+                        <a href="https://www.youtube.com/@techilyfly" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/abdurrahmanibnghufran" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/techilyfly" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/techilyfly" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Techily Fly — Founded by AbdurRahman Ibn Ghufran. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h3>Start Your Project</h3>
+            <form id="modalContactForm">
+                <div class="form-group">
+                    <input type="text" id="modalName" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="modalEmail" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="modalSubject" name="subject" placeholder="Project Type" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="modalMessage" name="message" placeholder="Tell me about your project..." rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal video-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="video-container">
+                <video id="modalVideo" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
 
-    -->
-
-    <!-- Grid / Card / View Ibn Ghufran -->
-   <!--
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-6 col-lg-6 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwCNY7kLphXzwMa4hP47jAIOaSV3MV7eavookwE2rjvvaIkKxv9qz1ARp7No35sH8QuAEBA1SwrAumIa9NnYQy2l02cqiawIPxFxELl5u13iVO-p3aS3TNpN2NAp8eMmKqLaOrq34i1UDizFij3s81TfWfV2lG1kKEPsFe5Ak5JRHeFwOXhN5BtWuAQg/s16000/AbdurRahman%20Ibn%20Ghufran.png"
-                        alt="AbdurRahman Ibn Ghufran">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">AbdurRahman Ibn Ghufran</h5>
-                        <p class="card-text">About AbdurRahman Ibn Ghufran.</p>
-                        <a href="http://abdurrahman.ibnghufran.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3OQpbYVvKA43oeIR14G0M3FFecJ1xUESccg2-D13Qkl9cRj2h9xC_IjAXS-pKfoOE9t5C-bCm0hGEmzDhFXLCoiFoqfoqmo1RsP6jJiEE7InHf3aJCBluUIEibAIDmgHSml5tsju_lLHHxoEvZv85_a7XjYrnzHJcgDKj_vSvZHSBMXz8eeHW8vOcBw/s16000/Muhammad%20Luqman%20Ibn%20Ghufran.png"
-                        alt="Luqman Ibn Ghufran">
-                    <div class="card-body">
-                        <h5 class="card-title">Luqman Ibn Ghufran</h5>
-                        <p class="card-text">About Luqman Ibn Ghufran.</p>
-                        <a href="http://luqman.ibnghufran.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUeFzjdwiTMwSn-V-_KZ3RuVov7OR15DnJDgbS1sjuIZe2zmUvb1B3Vzf8TXM1FTjbNGl6t2sKfIIQ6haBp3qijVPw0DaOpIslJivhFg8hEpbvrpaHqXcOAZgzgziqt-dwuET4di804C-7VWZWGWNFA-Pq8C0EtruH0vUi6ldaOYcN7TItpDwD_qxglA/s16000/SamiurRahman.png"
-                        alt="SamiurRahman Ibn Ghufran">
-                    <div class="card-body">
-                        <h5 class="card-title">SamiurRahman Ibn Ghufran</h5>
-                        <p class="card-text">About SamiurRahman Ibn Ghufran.</p>
-                        <a href="http://samiurrahman.ibnghufran.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtNQd9ZKRbhrJ51W6CQ20N534HBdUnD_394xRH1TOBdN2bV3G0IOn-6UAYIEQRSd4lKBmBHyW33cgGB4mFoDZJ8vn9Se4aPOtAPKi_VoaXDgjUIxPQhZ_z0yVS4Rc1ms0qPHX7x9mnkIwo0jdcERVPbsET1lYqgEzOwoTdzujKexucnwfSI0f1UL9t5A/s16000/AtiqurRahman.png"
-                        alt="AtiqurRahman Ibn Ghufran">
-                    <div class="card-body">
-                        <h5 class="card-title">AtiqurRahman Ibn Ghufran</h5>
-                        <p class="card-text">About AtiqurRahman Ibn Ghufran.</p>
-                        <a href="http://atiqurrahman.ibnghufran.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 my-3">
-                <div class="card">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioGM6gCAtr0UB9Lbmbu8IwHBKVSeNhPmiUwIDqUyXbZUulOukt4rEDyNREMJ_vB3PBgivXXTCLlBwAVEb6hJFeo4UU-jNrRlS0wHvSTxpfM5CYjHSjNGy8H4rO5u4G7tHuZWjPp68MooWd0Ox14-deUdpo3ug3CmVr7emHUOSiXAVKhcqV_2RwzRyeXw/s16000/SafiurRahman.png"
-                        alt="SafiurRahman Ibn Ghufran">
-                    <div class="card-body">
-                        <h5 class="card-title">SafiurRahman Ibn Ghufran</h5>
-                        <p class="card-text">About SafiurRahman Ibn Ghufran.</p>
-                        <a href="http://safiurrahman.ibnghufran.com" target="_blank" class="btn btn-primary">Know
-                            More...</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
--->
-    
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8RGQB4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
-
 </html>
