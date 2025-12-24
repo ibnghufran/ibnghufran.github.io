@@ -55,7 +55,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 800;
 }
 
@@ -294,6 +294,7 @@ body {
     line-height: 1.8;
     color: #333333;
 }
+
 
 /* Services Grid */
 .services-grid {
@@ -961,6 +962,11 @@ body {
     .about-highlights {
         grid-template-columns: 1fr;
     }
+
+    /* About Highlights */
+.about-highlights p{
+    text-align: left;
+}
 
     .highlight-item {
         flex-direction: column;
