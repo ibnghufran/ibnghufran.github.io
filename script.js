@@ -254,7 +254,7 @@ function submitViaWhatsApp() {
     const data = window.contactFormData;
     if (!data) return;
 
-    const message = `Hello TechilyFly! I'm interested in your educational video editing services.
+    const message = `Hello AbdurRahman Ibn Ghufran! I'm interested in your educational video editing services.
 
 📝 *Contact Details:*
 • *Name:* ${data.fullName}
@@ -281,7 +281,7 @@ function submitViaEmail() {
     if (!data) return;
 
     const subject = `Educational Video Editing Inquiry - ${data.fullName}`;
-    const body = `Hello TechilyFly Educational Video Team,
+    const body = `Hello AbdurRahman Ibn Ghufran Educational Video Team,
 
 I'm interested in your specialized educational video editing services. Here are my project details:
 
